@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Caculator</title>
-        <style>
 
-        </style>
-    </head>
-    <body>
-        
-    </body>
+<head>
+    <title>Caculator</title>
+    <style>
+        body {
+            background-color: tan;
+        }
+
+        .calcy {
+            background-color: #3d4543;
+            border-radius: 10px;
+            height: 340px;
+            width: 300px;
+            margin: 50px auto;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .screen {
+            background-color: #A1AF77;
+            color: black;
+            text-align: right;
+            height: 30px;
+            width: 230px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            font-size: 30px;
+            padding: 5px 10px;
+
+        }
+
+        .btn_container {
+
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+
+
+        }
+
+        .btn {
+            width: 50px;
+            text-align: centre;
+            color: white;
+            padding: 3px 0;
+            font-size: 20px;
+            background-color: rgb(26, 25, 25);
+            border-radius: 7px;
+            margin: 3px;
+            box-shadow: 0 0 2px 1px black;
+            border-bottom: black 2px solid;
+            border-top: 2px 303030 solid;
+
+
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 2px 1px white;
+        }
+
+        .btn_grey {
+            background-color: rgb(80, 77, 77);
+        }
+
+        .btn-pink {
+            color: black;
+            background-color: #ff4561;
+            border-top: none;
+            border-bottom: black 2px solid;
+        }
+
+        .btn-orange {
+            color: black;
+            background-color: #FF9933;
+            border-bottom: black 2px solid;
+            border-top: 2px FF9933 solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calcy">
+
+        <input type="text" value="0" class="screen" />
+
+        <div class="btn_container">
+            <button class="btn btn_grey">mrc</button>
+            <button class="btn">7</button>
+            <button class="btn">4</button>
+            <button class="btn">1</button>
+            <button class="btn">0</button>
+
+            <button class="btn btn_grey">m-</button>
+            <button class="btn">8</button>
+            <button class="btn">5</button>
+            <button class="btn">2</button>
+            <button class="btn">.</button>
+
+            <button class="btn btn_grey">m+</button>
+            <button class="btn">9</button>
+            <button class="btn">6</button>
+            <button class="btn">3</button>
+            <button class="btn">C</button>
+
+            <button class="btn btn-pink">/</button>
+            <button class="btn btn-pink">*</button>
+            <button class="btn btn-pink">-</button>
+            <button class="btn btn-pink">+</button>
+            <button class="btn btn-orange">=</button>
+
+        </div>
+
+    </div>
+
+
+</body>
+
 </html>
